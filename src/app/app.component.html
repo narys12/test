@@ -4,7 +4,7 @@
   <button (click)='save(name.value, email.value)'>Add</button>
 </form>
 
-<ul *ngFor="let name of names">
-  <li>{{name}}</li>
+<ul *ngFor="let userProfile of userProfiles">
+  <li>{{userProfile.name}}</li>
 </ul>
 
