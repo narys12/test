@@ -1,0 +1,11 @@
+<div>
+  <form>
+    <label for="">Name</label><input type="text" #name name="name" value="" />
+    <label for="">Email</label><input type="text" #email name="email" value="" />
+    <button (click)='save(name.value, email.value)'>Add</button>
+  </form>
+
+  <ul *ngFor="let userProfile of userProfiles | async">
+    <li>{{userProfile.name}}</li>
+  </ul>
+</div>
